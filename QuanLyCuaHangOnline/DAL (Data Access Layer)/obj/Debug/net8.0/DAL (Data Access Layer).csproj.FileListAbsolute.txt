@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\bin\Debug\net8.0\DAL (Data Access Layer).deps.json
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\bin\Debug\net8.0\DAL (Data Access Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\bin\Debug\net8.0\DAL (Data Access Layer).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\bin\Debug\net8.0\DTO (Data Transfer Object).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\bin\Debug\net8.0\DTO (Data Transfer Object).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).sourcelink.json
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Dat.1196D032.Up2Date
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\refint\DAL (Data Access Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\DAL (Data Access Layer).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\DAL (Data Access Layer)\obj\Debug\net8.0\ref\DAL (Data Access Layer).dll

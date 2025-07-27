@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\bin\Debug\net8.0\DTO (Data Transfer Object).deps.json
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\bin\Debug\net8.0\DTO (Data Transfer Object).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\bin\Debug\net8.0\DTO (Data Transfer Object).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).sourcelink.json
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\refint\DTO (Data Transfer Object).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\DTO (Data Transfer Object).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\Project DTO (Data Transfer Object)\obj\Debug\net8.0\ref\DTO (Data Transfer Object).dll

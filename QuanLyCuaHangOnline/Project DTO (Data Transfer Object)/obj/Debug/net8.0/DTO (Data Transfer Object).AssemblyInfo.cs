@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DTO (Data Transfer Object)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+774c6742fb62a55df2e0216ef6b661c51131bcf1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DTO (Data Transfer Object)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DTO (Data Transfer Object)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

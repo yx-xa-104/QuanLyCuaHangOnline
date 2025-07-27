@@ -1,0 +1,18 @@
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\BLL (Business Logic Layer).deps.json
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\BLL (Business Logic Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\BLL (Business Logic Layer).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\DAL (Data Access Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\DTO (Data Transfer Object).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\DAL (Data Access Layer).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\bin\Debug\net8.0\DTO (Data Transfer Object).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).sourcelink.json
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Bus.AF48B0F4.Up2Date
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\refint\BLL (Business Logic Layer).dll
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\BLL (Business Logic Layer).pdb
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\BLL (Business Logic Layer)\obj\Debug\net8.0\ref\BLL (Business Logic Layer).dll
