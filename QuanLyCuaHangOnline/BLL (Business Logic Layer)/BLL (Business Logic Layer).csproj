@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>BLL__Business_Logic_Layer_</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL (Data Access Layer)\DAL (Data Access Layer).csproj" />
+    <ProjectReference Include="..\Project DTO (Data Transfer Object)\DTO (Data Transfer Object).csproj" />
+  </ItemGroup>
+
+</Project>
