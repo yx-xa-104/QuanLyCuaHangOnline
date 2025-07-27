@@ -1,10 +1,11 @@
 ﻿using DAL; // Sử dụng lớp DAL
 using DTO; // Sử dụng lớp DTO
 using System.Data;
+using System.Data.SqlClient;
 
 namespace BLL
 {
-    public class SanPham_BLL
+    public class SanPham_BLL : DBConnect
     {
         private SanPham_DAL dalSanPham = new SanPham_DAL();
 
@@ -31,60 +32,37 @@ namespace BLL
 
         public bool SuaSanPham(SanPham_DTO sp)
         {
-            // Có thể thêm các logic kiểm tra tương tự ở đây
-            if (string.IsNullOrEmpty(sp.MaSP) || string.IsNullOrEmpty(sp.TenSP))
+            try
             {
-                return false;
-            }
+                _conn.Open();
+                string query = "UPDATE tblSanPham SET TenSP = @TenSP, MaDanhMuc = @MaDanhMuc, SoLuongTon = @SoLuongTon, DonGia = @DonGia, HinhAnh = @HinhAnh WHERE MaSP = @MaSP";
+                SqlCommand cmd = new SqlCommand(query, _conn);
 
-            // Đơn giá phải lớn hơn 0
-            if (sp.DonGia <= 0)
-            {
-                return false;
-            }
+                cmd.Parameters.AddWithValue("@TenSP", sp.TenSP);
+                cmd.Parameters.AddWithValue("@MaDanhMuc", sp.MaDanhMuc);
+                cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
+                cmd.Parameters.AddWithValue("@DonGia", sp.DonGia);
+                cmd.Parameters.AddWithValue("@HinhAnh", sp.HinhAnh);
+                cmd.Parameters.AddWithValue("@MaSP", sp.MaSP); // sp.MaSP bây giờ đã là kiểu int
 
-            // Số lượng tồn phải lớn hơn hoặc bằng 0
-            if (sp.SoLuongTon < 0)
-            {
-                return false;
+                if (cmd.ExecuteNonQuery() > 0)
+                    return true;
             }
-
-            // Kiểm tra mã sản phẩm không được rỗng
-            if (string.IsNullOrEmpty(sp.MaSP))
+            catch (Exception ex)
             {
-                return false;
+                Console.WriteLine("Lỗi khi sửa sản phẩm: " + ex.Message);
             }
-
-            // Kiểm tra tên sản phẩm không được rỗng
-            if (string.IsNullOrEmpty(sp.TenSP))
+            finally
             {
-                return false;
+                _conn.Close();
             }
-
-            // Kiểm tra mã danh mục không được rỗng
-            if (string.IsNullOrEmpty(sp.MaDanhMuc))
-            {
-                return false;
-            }
-
-            // Kiểm tra số lượng tồn không được âm
-            if (sp.SoLuongTon < 0)
-            {
-                return false;
-            }
-
-            // Kiểm tra đơn giá phải lớn hơn 0
-            if (sp.DonGia <= 0)
-            {
-                return false;
-            }
-            return dalSanPham.SuaSanPham(sp);
+            return false;
         }
 
-        public bool XoaSanPham(string maSP)
+        public bool XoaSanPham(int maSP)
         {
-            // Kiểm tra mã SP không được rỗng
-            if (string.IsNullOrEmpty(maSP))
+            // Kiểm tra mã sản phẩm hợp lệ
+            if (maSP <= 0)
             {
                 return false;
             }

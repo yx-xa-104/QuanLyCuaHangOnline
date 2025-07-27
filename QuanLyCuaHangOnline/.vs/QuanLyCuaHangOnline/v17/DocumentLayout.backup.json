@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288296D4-F084-4A77-8A58-D47C510816BE}|BLL (Business Logic Layer)\\BLL (Business Logic Layer).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\bll (business logic layer)\\sanpham_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288296D4-F084-4A77-8A58-D47C510816BE}|BLL (Business Logic Layer)\\BLL (Business Logic Layer).csproj|solutionrelative:bll (business logic layer)\\sanpham_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\dal (data access layer)\\sanpham_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|solutionrelative:dal (data access layer)\\sanpham_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmSanPham.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
               "RelativeDocumentMoniker": "GUI\\frmSanPham.cs",
@@ -35,20 +59,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "frmKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmKhachHang.cs",
+              "RelativeDocumentMoniker": "GUI\\frmKhachHang.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmKhachHang.cs [Design]",
+              "RelativeToolTip": "GUI\\frmKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T02:09:24.945Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmChinh.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmChinh.cs",
+              "RelativeDocumentMoniker": "GUI\\frmChinh.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmChinh.cs [Design]",
+              "RelativeToolTip": "GUI\\frmChinh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T02:20:25.631Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmTaoHoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\frmTaoHoaDon.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs [Design]",
+              "RelativeToolTip": "GUI\\frmTaoHoaDon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T02:53:28.038Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "frmSanPham.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
               "RelativeDocumentMoniker": "GUI\\frmSanPham.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
               "RelativeToolTip": "GUI\\frmSanPham.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAlwDsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAkwNoAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T01:26:31.758Z",
+              "WhenOpened": "2025-07-27T03:13:11.897Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmTaoHoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\frmTaoHoaDon.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs",
+              "RelativeToolTip": "GUI\\frmTaoHoaDon.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwHAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T03:14:18.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SanPham_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\BLL (Business Logic Layer)\\SanPham_BLL.cs",
+              "RelativeDocumentMoniker": "BLL (Business Logic Layer)\\SanPham_BLL.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\BLL (Business Logic Layer)\\SanPham_BLL.cs",
+              "RelativeToolTip": "BLL (Business Logic Layer)\\SanPham_BLL.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T03:35:14.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SanPham_DAL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\SanPham_DAL.cs",
+              "RelativeDocumentMoniker": "DAL (Data Access Layer)\\SanPham_DAL.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\SanPham_DAL.cs",
+              "RelativeToolTip": "DAL (Data Access Layer)\\SanPham_DAL.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T03:37:31.649Z",
+              "EditorCaption": ""
             }
           ]
         }

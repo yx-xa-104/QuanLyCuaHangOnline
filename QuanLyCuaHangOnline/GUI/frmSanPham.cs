@@ -10,6 +10,7 @@ namespace GUI
     public partial class frmSanPham : Form
     {
         private SanPham_BLL sp_bll = new SanPham_BLL();
+        private DanhMuc_BLL dm_bll = new DanhMuc_BLL();
         private bool isAdding = false;
         private string currentImagePath = string.Empty;
 
@@ -21,6 +22,7 @@ namespace GUI
         private void frmSanPham_Load(object sender, EventArgs e)
         {
             LoadData();
+            LoadDanhMuc();
             SetControlState(false); // Bắt đầu ở trạng thái chỉ xem
         }
         private void LoadData()
@@ -34,7 +36,7 @@ namespace GUI
         {
             txtMaSP.Enabled = isAdding; // Chỉ cho phép nhập mã khi thêm mới
             txtTenSP.Enabled = isEditing;
-            txtMaDanhMuc.Enabled = isEditing;
+            cboMaDanhMuc.Enabled = isEditing;
             txtSoLuongTon.Enabled = isEditing;
             txtDonGia.Enabled = isEditing;
             btnMoFile.Enabled = isEditing;
@@ -54,11 +56,11 @@ namespace GUI
         {
             txtMaSP.Clear();
             txtTenSP.Clear();
-            txtMaDanhMuc.Clear();
+            cboMaDanhMuc.SelectedIndex = -1;
             txtSoLuongTon.Clear();
             txtDonGia.Clear();
             picHinhAnh.Image = null;
-            currentImagePath = string.Empty; 
+            currentImagePath = string.Empty;
         }
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -68,7 +70,7 @@ namespace GUI
                 DataGridViewRow row = dgvSanPham.Rows[e.RowIndex];
                 txtMaSP.Text = row.Cells["MaSP"].Value.ToString();
                 txtTenSP.Text = row.Cells["TenSP"].Value.ToString();
-                txtMaDanhMuc.Text = row.Cells["MaDanhMuc"].Value.ToString();
+                cboMaDanhMuc.SelectedValue = row.Cells["MaDanhMuc"].Value.ToString();
                 txtSoLuongTon.Text = row.Cells["SoLuongTon"].Value.ToString();
                 txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
 
@@ -122,7 +124,7 @@ namespace GUI
             {
                 if (MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string maSP = dgvSanPham.SelectedRows[0].Cells["MaSP"].Value.ToString();
+                    int maSP = Convert.ToInt32(dgvSanPham.SelectedRows[0].Cells["MaSP"].Value);
                     if (sp_bll.XoaSanPham(maSP))
                     {
                         MessageBox.Show("Xóa sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -170,51 +172,51 @@ namespace GUI
 
                 SanPham_DTO sp = new SanPham_DTO
                 {
-                    MaSP = txtMaSP.Text.Trim(),
                     TenSP = txtTenSP.Text.Trim(),
-                    MaDanhMuc = txtMaDanhMuc.Text.Trim(),
+                    MaDanhMuc = cboMaDanhMuc.SelectedValue.ToString(),
                     SoLuongTon = int.Parse(txtSoLuongTon.Text),
                     DonGia = decimal.Parse(txtDonGia.Text),
-                    HinhAnh = imageName // Chỉ lưu tên file ảnh
+                    HinhAnh = imageName
                 };
                 if (isAdding)
                 {
                     if (sp_bll.ThemSanPham(sp))
                     {
-                        MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo");
                         LoadData();
                         SetControlState(false);
                     }
                     else
                     {
-                        MessageBox.Show("Thêm sản phẩm thất bại. Vui lòng kiểm tra lại dữ liệu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Thêm sản phẩm thất bại.", "Lỗi");
                     }
                 }
                 else // Đang sửa
                 {
+                    sp.MaSP = int.Parse(txtMaSP.Text);
                     if (sp_bll.SuaSanPham(sp))
                     {
-                        MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo");
                         LoadData();
                         SetControlState(false);
                     }
                     else
                     {
-                        MessageBox.Show("Cập nhật sản phẩm thất bại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Cập nhật sản phẩm thất bại.", "Lỗi");
                     }
                 }
             }
             catch (FormatException)
             {
-                MessageBox.Show("Số lượng tồn và đơn giá phải là số.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Số lượng tồn và đơn giá phải là số.", "Lỗi");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi");
             }
             finally
             {
-                currentImagePath = string.Empty; // Reset lại đường dẫn ảnh sau khi lưu
+                currentImagePath = string.Empty; // Reset đường dẫn ảnh sau khi lưu
             }
         }
 
@@ -246,6 +248,18 @@ namespace GUI
         private void dgvSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        private void LoadDanhMuc()
+        {
+            DataTable dt = dm_bll.GetAllDanhMuc();
+            cboMaDanhMuc.DataSource = dt;
+            cboMaDanhMuc.DisplayMember = "TenDanhMuc"; // Hiển thị Tên danh mục
+            cboMaDanhMuc.ValueMember = "MaDanhMuc";   // Lấy giá trị là Mã danh mục
+        }
+
+        private void frmSanPham_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
     }
 }

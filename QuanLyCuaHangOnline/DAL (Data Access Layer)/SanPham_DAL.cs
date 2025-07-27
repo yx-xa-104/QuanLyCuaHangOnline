@@ -23,10 +23,9 @@ namespace DAL
                 _conn.Open(); // Mở kết nối
 
                 // Query sử dụng tham số để tránh SQL Injection
-                string query = "INSERT INTO tblSanPham (MaSP, TenSP, MaDanhMuc, SoLuongTon, DonGia) VALUES (@MaSP, @TenSP, @MaDanhMuc, @SoLuongTon, @DonGia)";
+                string query = "INSERT INTO tblSanPham (TenSP, MaDanhMuc, SoLuongTon, DonGia, HinhAnh) VALUES (@TenSP, @MaDanhMuc, @SoLuongTon, @DonGia, @HinhAnh)";
 
                 SqlCommand cmd = new SqlCommand(query, _conn);
-                cmd.Parameters.AddWithValue("@MaSP", sp.MaSP);
                 cmd.Parameters.AddWithValue("@TenSP", sp.TenSP);
                 cmd.Parameters.AddWithValue("@MaDanhMuc", sp.MaDanhMuc);
                 cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
@@ -76,7 +75,7 @@ namespace DAL
             return false;
         }
 
-        public bool XoaSanPham(string maSP)
+        public bool XoaSanPham(int maSP)
         {
             try
             {

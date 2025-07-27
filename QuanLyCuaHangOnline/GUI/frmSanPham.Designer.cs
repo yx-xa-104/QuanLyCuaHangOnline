@@ -28,307 +28,351 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            txtMaSP = new TextBox();
-            txtTenSP = new TextBox();
-            txtMaDanhMuc = new TextBox();
-            txtSoLuongTon = new TextBox();
-            txtDonGia = new TextBox();
-            btnThem = new Button();
-            btnSua = new Button();
-            btnXoa = new Button();
-            btnLuu = new Button();
-            btnBoQua = new Button();
-            dgvSanPham = new DataGridView();
             groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            picHinhAnh = new PictureBox();
+            cboMaDanhMuc = new ComboBox();
             btnMoFile = new Button();
+            picHinhAnh = new PictureBox();
+            label6 = new Label();
+            txtDonGia = new TextBox();
+            label5 = new Label();
+            txtSoLuongTon = new TextBox();
+            label4 = new Label();
+            label3 = new Label();
+            txtTenSP = new TextBox();
+            label2 = new Label();
+            txtMaSP = new TextBox();
+            label1 = new Label();
+            groupBox2 = new GroupBox();
+            btnBoQua = new Button();
+            btnLuu = new Button();
+            btnXoa = new Button();
+            btnSua = new Button();
+            btnThem = new Button();
+            groupBox3 = new GroupBox();
+            dgvSanPham = new DataGridView();
+            label7 = new Label();
             txtTimKiem = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)dgvSanPham).BeginInit();
+            groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).BeginInit();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSanPham).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // groupBox1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(29, 40);
-            label1.Name = "label1";
-            label1.Size = new Size(79, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Mã sản phẩm\n";
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(cboMaDanhMuc);
+            groupBox1.Controls.Add(btnMoFile);
+            groupBox1.Controls.Add(picHinhAnh);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(txtDonGia);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(txtSoLuongTon);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(txtTenSP);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(txtMaSP);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(10, 9);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(838, 153);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Thông tin sản phẩm";
             // 
-            // label2
+            // cboMaDanhMuc
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(164, 42);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Tên sản phẩm";
+            cboMaDanhMuc.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboMaDanhMuc.FormattingEnabled = true;
+            cboMaDanhMuc.Location = new Point(116, 69);
+            cboMaDanhMuc.Name = "cboMaDanhMuc";
+            cboMaDanhMuc.Size = new Size(260, 23);
+            cboMaDanhMuc.TabIndex = 14;
             // 
-            // label3
+            // btnMoFile
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(355, 48);
-            label3.Name = "label3";
-            label3.Size = new Size(81, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Mã danh mục\n";
+            btnMoFile.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMoFile.Location = new Point(751, 18);
+            btnMoFile.Margin = new Padding(3, 2, 3, 2);
+            btnMoFile.Name = "btnMoFile";
+            btnMoFile.Size = new Size(77, 22);
+            btnMoFile.TabIndex = 6;
+            btnMoFile.Text = "Mở file...";
+            btnMoFile.UseVisualStyleBackColor = true;
+            btnMoFile.Click += btnMoFile_Click;
             // 
-            // label4
+            // picHinhAnh
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(503, 48);
-            label4.Name = "label4";
-            label4.Size = new Size(75, 15);
-            label4.TabIndex = 3;
-            label4.Text = "Số lượng tồn\n";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(698, 48);
-            label5.Name = "label5";
-            label5.Size = new Size(48, 15);
-            label5.TabIndex = 4;
-            label5.Text = "Đơn giá";
+            picHinhAnh.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            picHinhAnh.BackColor = Color.Transparent;
+            picHinhAnh.Location = new Point(472, 19);
+            picHinhAnh.Margin = new Padding(3, 2, 3, 2);
+            picHinhAnh.Name = "picHinhAnh";
+            picHinhAnh.Size = new Size(274, 130);
+            picHinhAnh.SizeMode = PictureBoxSizeMode.Zoom;
+            picHinhAnh.TabIndex = 13;
+            picHinhAnh.TabStop = false;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(835, 40);
+            label6.Location = new Point(396, 22);
             label6.Name = "label6";
             label6.Size = new Size(56, 15);
-            label6.TabIndex = 5;
-            label6.Text = "Hình ảnh\n";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(979, 42);
-            label7.Name = "label7";
-            label7.Size = new Size(57, 15);
-            label7.TabIndex = 6;
-            label7.Text = "Tìm kiếm";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(1096, 48);
-            label8.Name = "label8";
-            label8.Size = new Size(38, 15);
-            label8.TabIndex = 7;
-            label8.Text = "label8";
-            // 
-            // txtMaSP
-            // 
-            txtMaSP.Location = new Point(12, 58);
-            txtMaSP.Name = "txtMaSP";
-            txtMaSP.Size = new Size(100, 23);
-            txtMaSP.TabIndex = 8;
-            // 
-            // txtTenSP
-            // 
-            txtTenSP.Location = new Point(164, 58);
-            txtTenSP.Name = "txtTenSP";
-            txtTenSP.Size = new Size(100, 23);
-            txtTenSP.TabIndex = 9;
-            // 
-            // txtMaDanhMuc
-            // 
-            txtMaDanhMuc.Location = new Point(336, 66);
-            txtMaDanhMuc.Name = "txtMaDanhMuc";
-            txtMaDanhMuc.Size = new Size(100, 23);
-            txtMaDanhMuc.TabIndex = 10;
-            // 
-            // txtSoLuongTon
-            // 
-            txtSoLuongTon.Location = new Point(502, 66);
-            txtSoLuongTon.Name = "txtSoLuongTon";
-            txtSoLuongTon.Size = new Size(100, 23);
-            txtSoLuongTon.TabIndex = 11;
+            label6.TabIndex = 10;
+            label6.Text = "Hình ảnh";
             // 
             // txtDonGia
             // 
-            txtDonGia.Location = new Point(674, 66);
+            txtDonGia.Location = new Point(116, 122);
+            txtDonGia.Margin = new Padding(3, 2, 3, 2);
             txtDonGia.Name = "txtDonGia";
-            txtDonGia.Size = new Size(100, 23);
-            txtDonGia.TabIndex = 12;
+            txtDonGia.Size = new Size(260, 23);
+            txtDonGia.TabIndex = 4;
             // 
-            // btnThem
+            // label5
             // 
-            btnThem.Location = new Point(12, 214);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(75, 23);
-            btnThem.TabIndex = 13;
-            btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = true;
-            btnThem.Click += btnThem_Click;
+            label5.AutoSize = true;
+            label5.Location = new Point(14, 124);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 15);
+            label5.TabIndex = 8;
+            label5.Text = "Đơn giá";
             // 
-            // btnSua
+            // txtSoLuongTon
             // 
-            btnSua.Location = new Point(99, 214);
-            btnSua.Name = "btnSua";
-            btnSua.Size = new Size(75, 23);
-            btnSua.TabIndex = 14;
-            btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = true;
-            btnSua.Click += btnSua_Click;
+            txtSoLuongTon.Location = new Point(116, 96);
+            txtSoLuongTon.Margin = new Padding(3, 2, 3, 2);
+            txtSoLuongTon.Name = "txtSoLuongTon";
+            txtSoLuongTon.Size = new Size(260, 23);
+            txtSoLuongTon.TabIndex = 3;
             // 
-            // btnXoa
+            // label4
             // 
-            btnXoa.Location = new Point(189, 214);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(75, 23);
-            btnXoa.TabIndex = 15;
-            btnXoa.Text = "Xoá";
-            btnXoa.UseVisualStyleBackColor = true;
-            btnXoa.Click += btnXoa_Click;
+            label4.AutoSize = true;
+            label4.Location = new Point(14, 98);
+            label4.Name = "label4";
+            label4.Size = new Size(75, 15);
+            label4.TabIndex = 6;
+            label4.Text = "Số lượng tồn";
             // 
-            // btnLuu
+            // label3
             // 
-            btnLuu.Location = new Point(336, 214);
-            btnLuu.Name = "btnLuu";
-            btnLuu.Size = new Size(75, 23);
-            btnLuu.TabIndex = 16;
-            btnLuu.Text = "Lưu";
-            btnLuu.UseVisualStyleBackColor = true;
-            btnLuu.Click += btnLuu_Click;
+            label3.AutoSize = true;
+            label3.Location = new Point(14, 72);
+            label3.Name = "label3";
+            label3.Size = new Size(81, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Mã danh mục";
+            // 
+            // txtTenSP
+            // 
+            txtTenSP.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTenSP.Location = new Point(116, 44);
+            txtTenSP.Margin = new Padding(3, 2, 3, 2);
+            txtTenSP.Name = "txtTenSP";
+            txtTenSP.Size = new Size(260, 23);
+            txtTenSP.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(14, 46);
+            label2.Name = "label2";
+            label2.Size = new Size(81, 15);
+            label2.TabIndex = 2;
+            label2.Text = "Tên sản phẩm";
+            // 
+            // txtMaSP
+            // 
+            txtMaSP.Enabled = false;
+            txtMaSP.Location = new Point(116, 20);
+            txtMaSP.Margin = new Padding(3, 2, 3, 2);
+            txtMaSP.Name = "txtMaSP";
+            txtMaSP.Size = new Size(260, 23);
+            txtMaSP.TabIndex = 0;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(14, 22);
+            label1.Name = "label1";
+            label1.Size = new Size(79, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Mã sản phẩm";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            groupBox2.Controls.Add(btnBoQua);
+            groupBox2.Controls.Add(btnLuu);
+            groupBox2.Controls.Add(btnXoa);
+            groupBox2.Controls.Add(btnSua);
+            groupBox2.Controls.Add(btnThem);
+            groupBox2.Location = new Point(854, 9);
+            groupBox2.Margin = new Padding(3, 2, 3, 2);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new Padding(3, 2, 3, 2);
+            groupBox2.Size = new Size(120, 153);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Chức năng";
             // 
             // btnBoQua
             // 
-            btnBoQua.Location = new Point(428, 214);
+            btnBoQua.Location = new Point(18, 122);
+            btnBoQua.Margin = new Padding(3, 2, 3, 2);
             btnBoQua.Name = "btnBoQua";
-            btnBoQua.Size = new Size(75, 23);
-            btnBoQua.TabIndex = 17;
+            btnBoQua.Size = new Size(82, 22);
+            btnBoQua.TabIndex = 4;
             btnBoQua.Text = "Bỏ qua";
             btnBoQua.UseVisualStyleBackColor = true;
             btnBoQua.Click += btnBoQua_Click;
             // 
+            // btnLuu
+            // 
+            btnLuu.Location = new Point(18, 96);
+            btnLuu.Margin = new Padding(3, 2, 3, 2);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(82, 22);
+            btnLuu.TabIndex = 3;
+            btnLuu.Text = "Lưu";
+            btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
+            // 
+            // btnXoa
+            // 
+            btnXoa.Location = new Point(18, 70);
+            btnXoa.Margin = new Padding(3, 2, 3, 2);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(82, 22);
+            btnXoa.TabIndex = 2;
+            btnXoa.Text = "Xóa";
+            btnXoa.UseVisualStyleBackColor = true;
+            btnXoa.Click += btnXoa_Click;
+            // 
+            // btnSua
+            // 
+            btnSua.Location = new Point(18, 44);
+            btnSua.Margin = new Padding(3, 2, 3, 2);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(82, 22);
+            btnSua.TabIndex = 1;
+            btnSua.Text = "Sửa";
+            btnSua.UseVisualStyleBackColor = true;
+            btnSua.Click += btnSua_Click;
+            // 
+            // btnThem
+            // 
+            btnThem.Location = new Point(18, 19);
+            btnThem.Margin = new Padding(3, 2, 3, 2);
+            btnThem.Name = "btnThem";
+            btnThem.Size = new Size(82, 22);
+            btnThem.TabIndex = 0;
+            btnThem.Text = "Thêm";
+            btnThem.UseVisualStyleBackColor = true;
+            btnThem.Click += btnThem_Click;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox3.Controls.Add(dgvSanPham);
+            groupBox3.Controls.Add(label7);
+            groupBox3.Controls.Add(txtTimKiem);
+            groupBox3.Location = new Point(10, 166);
+            groupBox3.Margin = new Padding(3, 2, 3, 2);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(3, 2, 3, 2);
+            groupBox3.Size = new Size(963, 238);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Danh sách sản phẩm";
+            // 
             // dgvSanPham
             // 
+            dgvSanPham.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvSanPham.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSanPham.Location = new Point(99, 357);
+            dgvSanPham.Location = new Point(5, 45);
+            dgvSanPham.Margin = new Padding(3, 2, 3, 2);
             dgvSanPham.Name = "dgvSanPham";
-            dgvSanPham.Size = new Size(240, 150);
-            dgvSanPham.TabIndex = 18;
+            dgvSanPham.ReadOnly = true;
+            dgvSanPham.RowHeadersWidth = 51;
+            dgvSanPham.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvSanPham.Size = new Size(953, 188);
+            dgvSanPham.TabIndex = 2;
             dgvSanPham.CellClick += dgvSanPham_CellClick;
-            dgvSanPham.CellContentClick += dgvSanPham_CellContentClick;
             // 
-            // groupBox1
+            // label7
             // 
-            groupBox1.Location = new Point(428, 277);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(308, 230);
-            groupBox1.TabIndex = 19;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Thông tin sản phẩm";
-            // 
-            // groupBox2
-            // 
-            groupBox2.Location = new Point(884, 277);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(200, 221);
-            groupBox2.TabIndex = 20;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Danh sách sản phẩm";
-            // 
-            // picHinhAnh
-            // 
-            picHinhAnh.Location = new Point(835, 58);
-            picHinhAnh.Name = "picHinhAnh";
-            picHinhAnh.Size = new Size(100, 50);
-            picHinhAnh.TabIndex = 21;
-            picHinhAnh.TabStop = false;
-            // 
-            // btnMoFile
-            // 
-            btnMoFile.Location = new Point(845, 132);
-            btnMoFile.Name = "btnMoFile";
-            btnMoFile.Size = new Size(75, 23);
-            btnMoFile.TabIndex = 22;
-            btnMoFile.Text = "Mở file";
-            btnMoFile.UseVisualStyleBackColor = true;
-            btnMoFile.Click += btnMoFile_Click;
+            label7.AutoSize = true;
+            label7.Location = new Point(14, 22);
+            label7.Name = "label7";
+            label7.Size = new Size(134, 15);
+            label7.TabIndex = 1;
+            label7.Text = "Tìm kiếm (tên hoặc mã)";
             // 
             // txtTimKiem
             // 
-            txtTimKiem.Location = new Point(960, 66);
+            txtTimKiem.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTimKiem.Location = new Point(153, 20);
+            txtTimKiem.Margin = new Padding(3, 2, 3, 2);
             txtTimKiem.Name = "txtTimKiem";
-            txtTimKiem.Size = new Size(100, 23);
-            txtTimKiem.TabIndex = 23;
+            txtTimKiem.Size = new Size(806, 23);
+            txtTimKiem.TabIndex = 0;
             // 
             // frmSanPham
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1184, 585);
-            Controls.Add(txtTimKiem);
-            Controls.Add(btnMoFile);
-            Controls.Add(picHinhAnh);
+            ClientSize = new Size(984, 413);
+            Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Controls.Add(dgvSanPham);
-            Controls.Add(btnBoQua);
-            Controls.Add(btnLuu);
-            Controls.Add(btnXoa);
-            Controls.Add(btnSua);
-            Controls.Add(btnThem);
-            Controls.Add(txtDonGia);
-            Controls.Add(txtSoLuongTon);
-            Controls.Add(txtMaDanhMuc);
-            Controls.Add(txtTenSP);
-            Controls.Add(txtMaSP);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmSanPham";
-            Text = "frmSanPham";
+            Text = "Quản lý Sản phẩm";
+            FormClosing += frmSanPham_FormClosing;
             Load += frmSanPham_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvSanPham).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picHinhAnh).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvSanPham).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private TextBox txtMaSP;
-        private TextBox txtTenSP;
-        private TextBox txtMaDanhMuc;
-        private TextBox txtSoLuongTon;
-        private TextBox txtDonGia;
-        private Button btnThem;
-        private Button btnSua;
-        private Button btnXoa;
-        private Button btnLuu;
-        private Button btnBoQua;
-        private DataGridView dgvSanPham;
         private GroupBox groupBox1;
-        private GroupBox groupBox2;
+        private TextBox txtDonGia;
+        private Label label5;
+        private TextBox txtSoLuongTon;
+        private Label label4;
+        private Label label3;
+        private TextBox txtTenSP;
+        private Label label2;
+        private TextBox txtMaSP;
+        private Label label1;
         private PictureBox picHinhAnh;
+        private Label label6;
+        private GroupBox groupBox2;
+        private Button btnThem;
         private Button btnMoFile;
+        private Button btnBoQua;
+        private Button btnLuu;
+        private Button btnXoa;
+        private Button btnSua;
+        private GroupBox groupBox3;
+        private DataGridView dgvSanPham;
+        private Label label7;
         private TextBox txtTimKiem;
+        private ComboBox cboMaDanhMuc;
     }
 }
