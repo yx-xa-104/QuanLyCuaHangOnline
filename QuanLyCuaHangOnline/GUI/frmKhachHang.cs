@@ -161,5 +161,17 @@ namespace GUI
                 ClearInputs();
             }
         }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim();
+            DataTable dt = kh_bll.GetAllKhachHang();
+            DataView dv = new DataView(dt);
+
+            // Lọc dữ liệu trên TenKH, MaKH và SoDienThoai
+            dv.RowFilter = $"TenKH LIKE '%{keyword}%' OR MaKH LIKE '%{keyword}%' OR SoDienThoai LIKE '%{keyword}%'";
+
+            dgvKhachHang.DataSource = dv;
+        }
     }
 }

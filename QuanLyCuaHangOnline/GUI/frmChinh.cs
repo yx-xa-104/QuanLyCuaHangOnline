@@ -41,9 +41,10 @@ namespace GUI
 
         private void ThoatToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // quay lại frmDangNhap nếu người dùng thoát
             if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Application.Exit();
+              frmDangNhap loginForm = new frmDangNhap();
             }
         }
 
@@ -59,6 +60,13 @@ namespace GUI
             if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 e.Cancel = true; // Hủy bỏ việc đóng form
+            }
+
+            // Mở lại frmDangNhap nếu người dùng thoát
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                frmDangNhap loginForm = new frmDangNhap();
+                loginForm.Show();
             }
         }
 
@@ -87,6 +95,22 @@ namespace GUI
             frmTaoHoaDon f = new frmTaoHoaDon();
             f.MdiParent = this;
             f.Show();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Đóng tất cả các form con đang mở
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+
+            // Mở lại form đăng nhập
+            frmDangNhap fLogin = new frmDangNhap();
+            fLogin.Show();
+
+            // Đóng form chính
+            this.Close();
         }
     }
 }

@@ -20,31 +20,27 @@ namespace DAL
         {
             try
             {
-                _conn.Open(); // Mở kết nối
-
-                // Query sử dụng tham số để tránh SQL Injection
+                _conn.Open();
                 string query = "INSERT INTO tblSanPham (TenSP, MaDanhMuc, SoLuongTon, DonGia, HinhAnh) VALUES (@TenSP, @MaDanhMuc, @SoLuongTon, @DonGia, @HinhAnh)";
-
                 SqlCommand cmd = new SqlCommand(query, _conn);
+
                 cmd.Parameters.AddWithValue("@TenSP", sp.TenSP);
                 cmd.Parameters.AddWithValue("@MaDanhMuc", sp.MaDanhMuc);
                 cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
                 cmd.Parameters.AddWithValue("@DonGia", sp.DonGia);
+                cmd.Parameters.AddWithValue("@HinhAnh", sp.HinhAnh);
 
-                // ExecuteNonQuery trả về số dòng bị ảnh hưởng
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi nếu cần
-                Console.WriteLine("Lỗi khi thêm sản phẩm: " + ex.Message);
+                throw ex;
             }
             finally
             {
                 _conn.Close();
             }
-
             return false;
         }
 

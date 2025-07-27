@@ -28,7 +28,6 @@
             kháchHàngToolStripMenuItem = new ToolStripMenuItem();
             nhânViênToolStripMenuItem = new ToolStripMenuItem();
             hóaĐơnToolStripMenuItem = new ToolStripMenuItem();
-            trợGiúpToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1 = new ToolStrip();
             tsbSanPham = new ToolStripButton();
             tsbKhachHang = new ToolStripButton();
@@ -45,7 +44,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { hệThốngToolStripMenuItem, danhMụcToolStripMenuItem, hóaĐơnToolStripMenuItem, trợGiúpToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { hệThốngToolStripMenuItem, danhMụcToolStripMenuItem, hóaĐơnToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(5, 2, 0, 2);
@@ -63,14 +62,15 @@
             // đăngXuấtToolStripMenuItem
             // 
             đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            đăngXuấtToolStripMenuItem.Size = new Size(147, 22);
+            đăngXuấtToolStripMenuItem.Size = new Size(180, 22);
             đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
+            đăngXuấtToolStripMenuItem.Click += đăngXuấtToolStripMenuItem_Click;
             // 
             // thoátToolStripMenuItem
             // 
             thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             thoátToolStripMenuItem.ShortcutKeys = Keys.Alt | Keys.F4;
-            thoátToolStripMenuItem.Size = new Size(147, 22);
+            thoátToolStripMenuItem.Size = new Size(180, 22);
             thoátToolStripMenuItem.Text = "Thoát";
             thoátToolStripMenuItem.Click += ThoatToolStripMenuItem_Click;
             // 
@@ -84,21 +84,21 @@
             // sảnPhẩmToolStripMenuItem
             // 
             sảnPhẩmToolStripMenuItem.Name = "sảnPhẩmToolStripMenuItem";
-            sảnPhẩmToolStripMenuItem.Size = new Size(137, 22);
+            sảnPhẩmToolStripMenuItem.Size = new Size(180, 22);
             sảnPhẩmToolStripMenuItem.Text = "Sản phẩm";
             sảnPhẩmToolStripMenuItem.Click += SanPhamToolStripMenuItem_Click;
             // 
             // kháchHàngToolStripMenuItem
             // 
             kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            kháchHàngToolStripMenuItem.Size = new Size(137, 22);
+            kháchHàngToolStripMenuItem.Size = new Size(180, 22);
             kháchHàngToolStripMenuItem.Text = "Khách hàng";
             kháchHàngToolStripMenuItem.Click += kháchHàngToolStripMenuItem_Click;
             // 
             // nhânViênToolStripMenuItem
             // 
             nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            nhânViênToolStripMenuItem.Size = new Size(137, 22);
+            nhânViênToolStripMenuItem.Size = new Size(180, 22);
             nhânViênToolStripMenuItem.Text = "Nhân viên";
             // 
             // hóaĐơnToolStripMenuItem
@@ -107,12 +107,6 @@
             hóaĐơnToolStripMenuItem.Size = new Size(65, 20);
             hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
             hóaĐơnToolStripMenuItem.Click += hóaĐơnToolStripMenuItem_Click;
-            // 
-            // trợGiúpToolStripMenuItem
-            // 
-            trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            trợGiúpToolStripMenuItem.Size = new Size(63, 20);
-            trợGiúpToolStripMenuItem.Text = "Trợ giúp";
             // 
             // toolStrip1
             // 
@@ -221,7 +215,6 @@
         private ToolStripMenuItem kháchHàngToolStripMenuItem;
         private ToolStripMenuItem nhânViênToolStripMenuItem;
         private ToolStripMenuItem hóaĐơnToolStripMenuItem;
-        private ToolStripMenuItem trợGiúpToolStripMenuItem;
         private ToolStrip toolStrip1;
         private ToolStripButton tsbSanPham;
         private ToolStripButton tsbKhachHang;

@@ -148,6 +148,12 @@ namespace GUI
             try
             {
                 string imageName = "";
+                // Kiểm tra các trường bắt buộc
+                if (cboMaDanhMuc.SelectedValue == null)
+                {
+                    MessageBox.Show("Vui lòng chọn danh mục cho sản phẩm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 // Nếu người dùng đã chọn ảnh mới
                 if (!string.IsNullOrEmpty(currentImagePath))
                 {
@@ -166,7 +172,7 @@ namespace GUI
                 }
                 else if (dgvSanPham.SelectedRows.Count > 0 && !isAdding)
                 {
-                    // Nếu đang sửa mà không chọn ảnh mới, giữ lại tên ảnh cũ
+                    // Nếu không có ảnh mới, lấy ảnh từ dòng đang chọn
                     imageName = dgvSanPham.SelectedRows[0].Cells["HinhAnh"].Value?.ToString() ?? "";
                 }
 
@@ -180,15 +186,23 @@ namespace GUI
                 };
                 if (isAdding)
                 {
-                    if (sp_bll.ThemSanPham(sp))
+                    try
                     {
-                        MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo");
-                        LoadData();
-                        SetControlState(false);
+                        if (sp_bll.ThemSanPham(sp))
+                        {
+                            MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo");
+                            LoadData();
+                            SetControlState(false);
+                        }
+                        else
+                        {
+                            // Thông báo này ít khi xảy ra nếu có lỗi, vì lỗi sẽ được bắt ở catch
+                            MessageBox.Show("Thêm sản phẩm thất bại không rõ lý do.", "Lỗi");
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        MessageBox.Show("Thêm sản phẩm thất bại.", "Lỗi");
+                        MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Lỗi CSDL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else // Đang sửa
@@ -259,7 +273,20 @@ namespace GUI
 
         private void frmSanPham_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim();
+            DataTable dt = sp_bll.GetAllSanPham();
+            DataView dv = new DataView(dt);
+
+            // Lọc dữ liệu trên cả MaSP và TenSP
+            // Cần chuyển đổi MaSP sang string để so sánh
+            dv.RowFilter = $"CONVERT(MaSP, 'System.String') LIKE '%{keyword}%' OR TenSP LIKE '%{keyword}%'";
+
+            dgvSanPham.DataSource = dv;
         }
     }
 }

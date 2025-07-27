@@ -33,3 +33,4 @@ C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\GUI\obj\D
 C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\GUI\obj\Debug\net8.0-windows\GUI.frmChinh.resources
 C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\GUI\obj\Debug\net8.0-windows\GUI.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\GUI\obj\Debug\net8.0-windows\GUI.frmTaoHoaDon.resources
+C:\Users\User\Documents\GitHub\QuanLyCuaHangOnline\QuanLyCuaHangOnline\GUI\obj\Debug\net8.0-windows\GUI.frmDangNhap.resources

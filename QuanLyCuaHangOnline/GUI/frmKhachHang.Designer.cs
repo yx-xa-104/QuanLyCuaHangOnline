@@ -263,6 +263,7 @@
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.Size = new Size(878, 23);
             txtTimKiem.TabIndex = 0;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
             // 
             // frmKhachHang
             // 
