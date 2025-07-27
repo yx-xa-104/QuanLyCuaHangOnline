@@ -43,7 +43,7 @@ namespace BLL
                 cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
                 cmd.Parameters.AddWithValue("@DonGia", sp.DonGia);
                 cmd.Parameters.AddWithValue("@HinhAnh", sp.HinhAnh);
-                cmd.Parameters.AddWithValue("@MaSP", sp.MaSP); // sp.MaSP bây giờ đã là kiểu int
+                cmd.Parameters.AddWithValue("@MaSP", sp.MaSP);
 
                 if (cmd.ExecuteNonQuery() > 0)
                     return true;

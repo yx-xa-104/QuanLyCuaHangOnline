@@ -184,6 +184,12 @@ namespace GUI
                     DonGia = decimal.Parse(txtDonGia.Text),
                     HinhAnh = imageName
                 };
+
+                MessageBox.Show("Chuẩn bị lưu:\n" +
+                "Tên SP: " + sp.TenSP + "\n" +
+                "Mã Danh Mục: '" + sp.MaDanhMuc + "'", // Hiển thị mã danh mục
+                "Kiểm tra dữ liệu");
+
                 if (isAdding)
                 {
                     try

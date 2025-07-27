@@ -23,7 +23,6 @@ namespace DAL
                 _conn.Open();
                 string query = "INSERT INTO tblSanPham (TenSP, MaDanhMuc, SoLuongTon, DonGia, HinhAnh) VALUES (@TenSP, @MaDanhMuc, @SoLuongTon, @DonGia, @HinhAnh)";
                 SqlCommand cmd = new SqlCommand(query, _conn);
-
                 cmd.Parameters.AddWithValue("@TenSP", sp.TenSP);
                 cmd.Parameters.AddWithValue("@MaDanhMuc", sp.MaDanhMuc);
                 cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
