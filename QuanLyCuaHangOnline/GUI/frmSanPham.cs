@@ -34,7 +34,7 @@ namespace GUI
         // Thiết lập trạng thái của các controls
         private void SetControlState(bool isEditing)
         {
-            txtMaSP.Enabled = isAdding; // Chỉ cho phép nhập mã khi thêm mới
+            txtMaSP.Enabled = isEditing; // Chỉ cho phép nhập mã khi thêm mới
             txtTenSP.Enabled = isEditing;
             cboMaDanhMuc.Enabled = isEditing;
             txtSoLuongTon.Enabled = isEditing;
@@ -185,11 +185,6 @@ namespace GUI
                     HinhAnh = imageName
                 };
 
-                MessageBox.Show("Chuẩn bị lưu:\n" +
-                "Tên SP: " + sp.TenSP + "\n" +
-                "Mã Danh Mục: '" + sp.MaDanhMuc + "'", // Hiển thị mã danh mục
-                "Kiểm tra dữ liệu");
-
                 if (isAdding)
                 {
                     try
@@ -264,11 +259,7 @@ namespace GUI
                 currentImagePath = open.FileName; // Lưu đường dẫn đầy đủ của ảnh đã chọn
             }
         }
-
-        private void dgvSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+      
         private void LoadDanhMuc()
         {
             DataTable dt = dm_bll.GetAllDanhMuc();
@@ -293,6 +284,11 @@ namespace GUI
             dv.RowFilter = $"CONVERT(MaSP, 'System.String') LIKE '%{keyword}%' OR TenSP LIKE '%{keyword}%'";
 
             dgvSanPham.DataSource = dv;
+        }
+
+        private void cboMaDanhMuc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

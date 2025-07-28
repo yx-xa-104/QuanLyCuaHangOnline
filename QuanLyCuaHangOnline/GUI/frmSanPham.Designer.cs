@@ -92,6 +92,7 @@
             cboMaDanhMuc.Name = "cboMaDanhMuc";
             cboMaDanhMuc.Size = new Size(260, 23);
             cboMaDanhMuc.TabIndex = 14;
+            cboMaDanhMuc.SelectedIndexChanged += cboMaDanhMuc_SelectedIndexChanged;
             // 
             // btnMoFile
             // 

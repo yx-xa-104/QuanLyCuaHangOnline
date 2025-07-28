@@ -11,8 +11,14 @@ namespace DTO
         public int SoLuongTon { get; set; }
         public decimal DonGia { get; set; }
         public string HinhAnh { get; set; }
-
         // Constructor không tham số
-        public SanPham_DTO() { }      
+        public SanPham_DTO()
+        {
+            // Khởi tạo giá trị mặc định cho các property string để tránh lỗi
+            TenSP = string.Empty;
+            MaDanhMuc = string.Empty;
+            HinhAnh = string.Empty;
+        }
     }
 }
+

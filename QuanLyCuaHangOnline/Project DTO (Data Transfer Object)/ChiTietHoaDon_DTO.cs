@@ -7,7 +7,7 @@ namespace DTO
         public string MaHD { get; set; }
         public int MaSP { get; set; }
         public int SoLuong { get; set; }
-        public decimal DonGia { get; set; } // Đơn giá tại thời điểm bán
+        public decimal DonGia { get; set; } 
 
         public ChiTietHoaDon_DTO() { }
     }

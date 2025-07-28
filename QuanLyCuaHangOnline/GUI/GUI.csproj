@@ -9,6 +9,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<ProjectReference Include="..\BLL (Business Logic Layer)\BLL (Business Logic Layer).csproj" />
 		<ProjectReference Include="..\DAL (Data Access Layer)\DAL (Data Access Layer).csproj" />
 		<ProjectReference Include="..\Project DTO (Data Transfer Object)\DTO (Data Transfer Object).csproj" />

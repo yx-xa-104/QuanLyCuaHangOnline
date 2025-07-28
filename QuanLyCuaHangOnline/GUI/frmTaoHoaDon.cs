@@ -99,7 +99,7 @@ namespace GUI
                 MaKH = cboKhachHang.SelectedValue.ToString(),
                 TenDangNhap = "admin",
                 NgayLap = DateTime.Now,
-                TongTien = 0 // Sẽ được tính lại từ chi tiết
+                TongTien = 0 
             };
 
             // Tạo danh sách ChiTietHoaDon_DTO
@@ -107,15 +107,25 @@ namespace GUI
             decimal tongTien = 0;
             foreach (DataGridViewRow row in dgvChiTietHD.Rows)
             {
+                if (row.IsNewRow) continue; 
+
+                var maSPValue = row.Cells["MaSP"].Value;
+                var soLuongValue = row.Cells["SoLuong"].Value;
+                var donGiaValue = row.Cells["DonGia"].Value;
+                var thanhTienValue = row.Cells["ThanhTien"].Value;
+
+                if (maSPValue == null || soLuongValue == null || donGiaValue == null || thanhTienValue == null)
+                    continue;
+
                 ChiTietHoaDon_DTO cthd = new ChiTietHoaDon_DTO
                 {
                     MaHD = hoaDon.MaHD,
-                    MaSP = Convert.ToInt32(row.Cells["MaSP"].Value),
-                    SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value),
-                    DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value)
+                    MaSP = Convert.ToInt32(maSPValue),
+                    SoLuong = Convert.ToInt32(soLuongValue),
+                    DonGia = Convert.ToDecimal(donGiaValue)
                 };
                 listCTHD.Add(cthd);
-                tongTien += Convert.ToDecimal(row.Cells["ThanhTien"].Value);
+                tongTien += Convert.ToDecimal(thanhTienValue);
             }
             hoaDon.TongTien = tongTien;
 
