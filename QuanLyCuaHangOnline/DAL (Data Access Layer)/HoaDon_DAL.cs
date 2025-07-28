@@ -10,10 +10,25 @@ namespace DAL
     {
         public DataTable GetAllHoaDon()
         {
-            string query = "SELECT * FROM tblHoaDon";
-            SqlDataAdapter da = new SqlDataAdapter(query, _conn);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            try
+            {
+                _conn.Open();
+                string query = @"SELECT hd.MaHD, kh.TenKH, hd.MaKH, hd.TenDangNhap, hd.NgayLap, hd.TongTien 
+                         FROM tblHoaDon hd
+                         JOIN tblKhachHang kh ON hd.MaKH = kh.MaKH
+                         ORDER BY hd.NgayLap DESC";
+                SqlDataAdapter da = new SqlDataAdapter(query, _conn);
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi lấy danh sách hóa đơn: " + ex.Message);
+            }
+            finally
+            {
+                _conn.Close();
+            }
             return dt;
         }
 
@@ -50,10 +65,9 @@ namespace DAL
             try
             {
                 _conn.Open();
-                // Bắt đầu transaction
                 transaction = _conn.BeginTransaction();
 
-                // Thêm Hóa đơn vào tblHoaDon
+                // Thêm Hóa đơn
                 string hdQuery = "INSERT INTO tblHoaDon (MaHD, MaKH, TenDangNhap, NgayLap, TongTien) VALUES (@MaHD, @MaKH, @TenDangNhap, @NgayLap, @TongTien)";
                 SqlCommand hdCmd = new SqlCommand(hdQuery, _conn, transaction);
                 hdCmd.Parameters.AddWithValue("@MaHD", hd.MaHD);
@@ -63,31 +77,30 @@ namespace DAL
                 hdCmd.Parameters.AddWithValue("@TongTien", hd.TongTien);
                 hdCmd.ExecuteNonQuery();
 
-                // Thêm từng Chi tiết hóa đơn vào tblChiTietHoaDon
+                // Thêm Chi tiết hóa đơn
                 foreach (ChiTietHoaDon_DTO cthd in list_cthd)
                 {
                     string cthdQuery = "INSERT INTO tblChiTietHoaDon (MaHD, MaSP, SoLuong, DonGia) VALUES (@MaHD, @MaSP, @SoLuong, @DonGia)";
                     SqlCommand cthdCmd = new SqlCommand(cthdQuery, _conn, transaction);
                     cthdCmd.Parameters.AddWithValue("@MaHD", cthd.MaHD);
+
                     cthdCmd.Parameters.AddWithValue("@MaSP", cthd.MaSP);
                     cthdCmd.Parameters.AddWithValue("@SoLuong", cthd.SoLuong);
                     cthdCmd.Parameters.AddWithValue("@DonGia", cthd.DonGia);
                     cthdCmd.ExecuteNonQuery();
                 }
 
-                // Nếu tất cả thành công, commit transaction
                 transaction.Commit();
                 return true;
             }
             catch (Exception ex)
             {
-                // Nếu có lỗi, hủy bỏ tất cả các thay đổi
                 if (transaction != null)
                 {
                     transaction.Rollback();
                 }
-                Console.WriteLine("Lỗi khi tạo hóa đơn (DAL): " + ex.Message);
-                return false;
+                // "Ném" lỗi chi tiết ra ngoài để giao diện bắt được
+                throw ex;
             }
             finally
             {

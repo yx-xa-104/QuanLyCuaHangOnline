@@ -147,37 +147,37 @@ namespace GUI
         {
             try
             {
-                string imageName = "";
-                // Kiểm tra các trường bắt buộc
+                // Kiểm tra các giá trị đầu vào cơ bản
                 if (cboMaDanhMuc.SelectedValue == null)
                 {
-                    MessageBox.Show("Vui lòng chọn danh mục cho sản phẩm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Vui lòng chọn danh mục cho sản phẩm.", "Dữ liệu không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                // Nếu người dùng đã chọn ảnh mới
+                if (string.IsNullOrWhiteSpace(txtTenSP.Text) || string.IsNullOrWhiteSpace(txtMaSP.Text))
+                {
+                    MessageBox.Show("Mã sản phẩm và Tên sản phẩm không được để trống.", "Dữ liệu không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Xử lý hình ảnh 
+                string imageName = "";
                 if (!string.IsNullOrEmpty(currentImagePath))
                 {
-                    // Tạo thư mục Images nếu chưa có
                     string targetDirectory = Path.Combine(Application.StartupPath, "Images");
-                    if (!Directory.Exists(targetDirectory))
-                    {
-                        Directory.CreateDirectory(targetDirectory);
-                    }
-
+                    if (!Directory.Exists(targetDirectory)) Directory.CreateDirectory(targetDirectory);
                     imageName = Path.GetFileName(currentImagePath);
                     string destinationPath = Path.Combine(targetDirectory, imageName);
-
-                    // Sao chép file ảnh vào thư mục Images (ghi đè nếu đã tồn tại)
                     File.Copy(currentImagePath, destinationPath, true);
                 }
                 else if (dgvSanPham.SelectedRows.Count > 0 && !isAdding)
                 {
-                    // Nếu không có ảnh mới, lấy ảnh từ dòng đang chọn
                     imageName = dgvSanPham.SelectedRows[0].Cells["HinhAnh"].Value?.ToString() ?? "";
                 }
 
+                // Tạo đối tượng DTO và chuyển đổi kiểu dữ liệu
                 SanPham_DTO sp = new SanPham_DTO
                 {
+                    MaSP = int.Parse(txtMaSP.Text.Trim()),
                     TenSP = txtTenSP.Text.Trim(),
                     MaDanhMuc = cboMaDanhMuc.SelectedValue.ToString(),
                     SoLuongTon = int.Parse(txtSoLuongTon.Text),
@@ -185,53 +185,38 @@ namespace GUI
                     HinhAnh = imageName
                 };
 
+                // Gọi BLL để thực thi
                 if (isAdding)
                 {
-                    try
+                    if (sp_bll.ThemSanPham(sp))
                     {
-                        if (sp_bll.ThemSanPham(sp))
-                        {
-                            MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo");
-                            LoadData();
-                            SetControlState(false);
-                        }
-                        else
-                        {
-                            // Thông báo này ít khi xảy ra nếu có lỗi, vì lỗi sẽ được bắt ở catch
-                            MessageBox.Show("Thêm sản phẩm thất bại không rõ lý do.", "Lỗi");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Lỗi CSDL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-                else // Đang sửa
-                {
-                    sp.MaSP = int.Parse(txtMaSP.Text);
-                    if (sp_bll.SuaSanPham(sp))
-                    {
-                        MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo");
+                        MessageBox.Show("Thêm sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LoadData();
                         SetControlState(false);
                     }
-                    else
+                }
+                else // Chế độ Sửa
+                {
+                    if (sp_bll.SuaSanPham(sp))
                     {
-                        MessageBox.Show("Cập nhật sản phẩm thất bại.", "Lỗi");
+                        MessageBox.Show("Cập nhật sản phẩm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadData();
+                        SetControlState(false);
                     }
                 }
             }
-            catch (FormatException)
+            catch (FormatException) // Bắt lỗi nếu người dùng nhập chữ vào ô số
             {
-                MessageBox.Show("Số lượng tồn và đơn giá phải là số.", "Lỗi");
+                MessageBox.Show("Vui lòng kiểm tra lại 'Mã sản phẩm', 'Số lượng tồn' và 'Đơn giá'.\nChúng phải là những con số hợp lệ.", "Lỗi Định Dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi");
+                // Hiển thị các lỗi khác từ CSDL
+                MessageBox.Show("Đã xảy ra lỗi:\n\n" + ex.Message, "Lỗi CSDL", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
             finally
             {
-                currentImagePath = string.Empty; // Reset đường dẫn ảnh sau khi lưu
+                currentImagePath = string.Empty;
             }
         }
 

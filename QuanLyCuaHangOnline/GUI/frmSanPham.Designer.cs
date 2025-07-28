@@ -190,7 +190,6 @@
             // 
             // txtMaSP
             // 
-            txtMaSP.Enabled = false;
             txtMaSP.Location = new Point(116, 20);
             txtMaSP.Margin = new Padding(3, 2, 3, 2);
             txtMaSP.Name = "txtMaSP";

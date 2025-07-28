@@ -44,7 +44,7 @@ namespace GUI
             // quay lại frmDangNhap nếu người dùng thoát
             if (MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-              frmDangNhap loginForm = new frmDangNhap();
+                frmDangNhap loginForm = new frmDangNhap();
             }
         }
 
@@ -111,6 +111,21 @@ namespace GUI
 
             // Đóng form chính
             this.Close();
+        }
+
+        private void xemDanhSáchHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = KiemTraTonTai(typeof(frmXemHoaDon));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                frmXemHoaDon f = new frmXemHoaDon();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
     }
 }

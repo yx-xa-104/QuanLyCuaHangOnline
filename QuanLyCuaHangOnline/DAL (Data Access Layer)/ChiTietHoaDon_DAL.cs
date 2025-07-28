@@ -32,5 +32,31 @@ namespace DAL
             }
             return false;
         }
+        public DataTable GetChiTietByMaHD(string maHD)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                _conn.Open();
+                // Sử dụng JOIN để lấy Tên sản phẩm 
+                string query = @"SELECT ct.MaSP, sp.TenSP, ct.SoLuong, ct.DonGia, (ct.SoLuong * ct.DonGia) AS ThanhTien
+                         FROM tblChiTietHoaDon ct
+                         JOIN tblSanPham sp ON ct.MaSP = sp.MaSP
+                         WHERE ct.MaHD = @MaHD";
+                SqlCommand cmd = new SqlCommand(query, _conn);
+                cmd.Parameters.AddWithValue("@MaHD", maHD);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi lấy chi tiết hóa đơn: " + ex.Message);
+            }
+            finally
+            {
+                _conn.Close();
+            }
+            return dt;
+        }
     }
 }

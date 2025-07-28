@@ -81,63 +81,69 @@ namespace GUI
 
         private void btnTaoHoaDon_Click(object sender, EventArgs e)
         {
+            // Kiểm tra các điều kiện đầu vào
             if (cboKhachHang.SelectedValue == null)
             {
-                MessageBox.Show("Vui lòng chọn khách hàng.");
+                MessageBox.Show("Vui lòng chọn khách hàng.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (dgvChiTietHD.Rows.Count == 0)
             {
-                MessageBox.Show("Hóa đơn phải có ít nhất một sản phẩm.");
+                MessageBox.Show("Hóa đơn phải có ít nhất một sản phẩm.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(txtMaHD.Text))
+            {
+                MessageBox.Show("Mã hóa đơn không được để trống.", "Thiếu thông tin", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Tạo đối tượng HoaDon_DTO
-            HoaDon_DTO hoaDon = new HoaDon_DTO
+            try
             {
-                MaHD = txtMaHD.Text,
-                MaKH = cboKhachHang.SelectedValue.ToString(),
-                TenDangNhap = "admin",
-                NgayLap = DateTime.Now,
-                TongTien = 0 
-            };
-
-            // Tạo danh sách ChiTietHoaDon_DTO
-            List<ChiTietHoaDon_DTO> listCTHD = new List<ChiTietHoaDon_DTO>();
-            decimal tongTien = 0;
-            foreach (DataGridViewRow row in dgvChiTietHD.Rows)
-            {
-                if (row.IsNewRow) continue; 
-
-                var maSPValue = row.Cells["MaSP"].Value;
-                var soLuongValue = row.Cells["SoLuong"].Value;
-                var donGiaValue = row.Cells["DonGia"].Value;
-                var thanhTienValue = row.Cells["ThanhTien"].Value;
-
-                if (maSPValue == null || soLuongValue == null || donGiaValue == null || thanhTienValue == null)
-                    continue;
-
-                ChiTietHoaDon_DTO cthd = new ChiTietHoaDon_DTO
+                // Tạo đối tượng HoaDon_DTO
+                HoaDon_DTO hoaDon = new HoaDon_DTO
                 {
-                    MaHD = hoaDon.MaHD,
-                    MaSP = Convert.ToInt32(maSPValue),
-                    SoLuong = Convert.ToInt32(soLuongValue),
-                    DonGia = Convert.ToDecimal(donGiaValue)
+                    MaHD = txtMaHD.Text.Trim(),
+                    MaKH = cboKhachHang.SelectedValue.ToString(),
+                    TenDangNhap = "admin", // Giả định người dùng đăng nhập là admin
+                    NgayLap = DateTime.Now,
+                    TongTien = 0 // Sẽ được tính lại từ chi tiết
                 };
-                listCTHD.Add(cthd);
-                tongTien += Convert.ToDecimal(thanhTienValue);
-            }
-            hoaDon.TongTien = tongTien;
 
-            // Gọi BLL để lưu
-            if (hd_bll.TaoHoaDon(hoaDon, listCTHD))
-            {
-                MessageBox.Show("Tạo hóa đơn thành công!", "Thông báo");
-                this.Close();
+                // Tạo danh sách ChiTietHoaDon_DTO từ DataGridView
+                List<ChiTietHoaDon_DTO> listCTHD = new List<ChiTietHoaDon_DTO>();
+                decimal tongTien = 0;
+
+                foreach (DataGridViewRow row in dgvChiTietHD.Rows)
+                {
+                    ChiTietHoaDon_DTO cthd = new ChiTietHoaDon_DTO
+                    {
+                        MaHD = hoaDon.MaHD,        
+                        MaSP = Convert.ToInt32(row.Cells["MaSP"].Value),
+                        SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value),
+                        DonGia = Convert.ToDecimal(row.Cells["DonGia"].Value)
+                    };
+                    listCTHD.Add(cthd);
+                    tongTien += Convert.ToDecimal(row.Cells["ThanhTien"].Value);
+                }
+                hoaDon.TongTien = tongTien;
+
+                // Gọi BLL để thực hiện lưu và bắt lỗi chi tiết
+                if (hd_bll.TaoHoaDon(hoaDon, listCTHD))
+                {
+                    MessageBox.Show("Tạo hóa đơn thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Tạo hóa đơn thất bại vì một lý do không xác định.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Tạo hóa đơn thất bại!", "Lỗi");
+                // Hiển thị lỗi chi tiết từ CSDL
+                MessageBox.Show("Đã xảy ra lỗi khi tạo hóa đơn:\n\n" + ex.Message,
+                                "Lỗi Cơ sở dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
 

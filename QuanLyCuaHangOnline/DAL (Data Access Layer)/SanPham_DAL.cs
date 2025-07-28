@@ -23,20 +23,26 @@ namespace DAL
             try
             {
                 _conn.Open();
-                string query = "INSERT INTO tblSanPham (TenSP, MaDanhMuc, SoLuongTon, DonGia, HinhAnh) VALUES (@TenSP, @MaDanhMuc, @SoLuongTon, @DonGia, @HinhAnh)";
-                using (SqlCommand cmd = new SqlCommand(query, _conn))
+                string query = "INSERT INTO tblSanPham (MaSP, TenSP, MaDanhMuc, SoLuongTon, DonGia, HinhAnh) VALUES (@MaSP, @TenSP, @MaDanhMuc, @SoLuongTon, @DonGia, @HinhAnh)";
+                SqlCommand cmd = new SqlCommand(query, _conn);
+
+                cmd.Parameters.AddWithValue("@MaSP", sp.MaSP);
+                cmd.Parameters.AddWithValue("@TenSP", sp.TenSP);
+                cmd.Parameters.AddWithValue("@MaDanhMuc", sp.MaDanhMuc);
+                cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
+                cmd.Parameters.AddWithValue("@DonGia", sp.DonGia);
+                cmd.Parameters.AddWithValue("@HinhAnh", sp.HinhAnh);
+
+                if (cmd.ExecuteNonQuery() > 0)
                 {
-                    cmd.Parameters.AddWithValue("@TenSP", sp.TenSP);
-                    cmd.Parameters.AddWithValue("@MaDanhMuc", sp.MaDanhMuc);
-                    cmd.Parameters.AddWithValue("@SoLuongTon", sp.SoLuongTon);
-                    cmd.Parameters.AddWithValue("@DonGia", sp.DonGia);
-                    cmd.Parameters.AddWithValue("@HinhAnh", sp.HinhAnh);
-                    return cmd.ExecuteNonQuery() > 0;
+                    return true;
                 }
+                return false;
             }
-            catch
+            catch (Exception ex)
             {
-                throw;
+                // Ném lỗi ra ngoài để giao diện có thể bắt được và hiển thị
+                throw ex;
             }
             finally
             {

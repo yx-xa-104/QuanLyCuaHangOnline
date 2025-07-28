@@ -35,6 +35,7 @@
             statusStrip1 = new StatusStrip();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             timer1 = new System.Windows.Forms.Timer(components);
+            xemDanhSáchHóaĐơnToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             toolStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
@@ -96,6 +97,7 @@
             // 
             // hóaĐơnToolStripMenuItem
             // 
+            hóaĐơnToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { xemDanhSáchHóaĐơnToolStripMenuItem });
             hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
             hóaĐơnToolStripMenuItem.Size = new Size(65, 20);
             hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
@@ -172,6 +174,13 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // xemDanhSáchHóaĐơnToolStripMenuItem
+            // 
+            xemDanhSáchHóaĐơnToolStripMenuItem.Name = "xemDanhSáchHóaĐơnToolStripMenuItem";
+            xemDanhSáchHóaĐơnToolStripMenuItem.Size = new Size(202, 22);
+            xemDanhSáchHóaĐơnToolStripMenuItem.Text = "Xem danh sách hóa đơn";
+            xemDanhSáchHóaĐơnToolStripMenuItem.Click += xemDanhSáchHóaĐơnToolStripMenuItem_Click;
+            // 
             // frmChinh
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -215,5 +224,6 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Timer timer1;
+        private ToolStripMenuItem xemDanhSáchHóaĐơnToolStripMenuItem;
     }
 }

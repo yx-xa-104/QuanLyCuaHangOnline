@@ -1,6 +1,7 @@
 ﻿using DAL;
 using DTO;
 using System.Collections.Generic;
+using System.Data;
 
 namespace BLL
 {
@@ -17,6 +18,10 @@ namespace BLL
             }
             // Gọi DAL để thực hiện
             return dalHoaDon.TaoHoaDon(hd, list_cthd);
+        }
+        public DataTable GetAllHoaDon()
+        {
+            return dalHoaDon.GetAllHoaDon();
         }
     }
 }

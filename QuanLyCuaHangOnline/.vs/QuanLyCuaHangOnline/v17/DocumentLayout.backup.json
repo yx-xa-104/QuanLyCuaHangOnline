@@ -3,48 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\dal (data access layer)\\sanpham_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|solutionrelative:dal (data access layer)\\sanpham_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63D4ED05-0766-4F6C-B3A9-42EF33607D35}|Project DTO (Data Transfer Object)\\DTO (Data Transfer Object).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\project dto (data transfer object)\\danhmuc_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63D4ED05-0766-4F6C-B3A9-42EF33607D35}|Project DTO (Data Transfer Object)\\DTO (Data Transfer Object).csproj|solutionrelative:project dto (data transfer object)\\danhmuc_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63D4ED05-0766-4F6C-B3A9-42EF33607D35}|Project DTO (Data Transfer Object)\\DTO (Data Transfer Object).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\project dto (data transfer object)\\chitiethoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63D4ED05-0766-4F6C-B3A9-42EF33607D35}|Project DTO (Data Transfer Object)\\DTO (Data Transfer Object).csproj|solutionrelative:project dto (data transfer object)\\chitiethoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63D4ED05-0766-4F6C-B3A9-42EF33607D35}|Project DTO (Data Transfer Object)\\DTO (Data Transfer Object).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\project dto (data transfer object)\\hoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63D4ED05-0766-4F6C-B3A9-42EF33607D35}|Project DTO (Data Transfer Object)\\DTO (Data Transfer Object).csproj|solutionrelative:project dto (data transfer object)\\hoadon_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\dal (data access layer)\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|solutionrelative:dal (data access layer)\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmchinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmxemhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmxemhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "frmChinh.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmChinh.cs",
               "RelativeDocumentMoniker": "GUI\\frmChinh.cs",
@@ -71,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "frmSanPham.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
               "RelativeDocumentMoniker": "GUI\\frmSanPham.cs",
@@ -109,99 +97,60 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DanhMuc_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\Project DTO (Data Transfer Object)\\DanhMuc_DTO.cs",
-              "RelativeDocumentMoniker": "Project DTO (Data Transfer Object)\\DanhMuc_DTO.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\Project DTO (Data Transfer Object)\\DanhMuc_DTO.cs",
-              "RelativeToolTip": "Project DTO (Data Transfer Object)\\DanhMuc_DTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "frmXemHoaDon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\frmXemHoaDon.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.cs [Design]",
+              "RelativeToolTip": "GUI\\frmXemHoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T15:11:24.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T02:01:32.246Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SanPham_DAL.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\SanPham_DAL.cs",
-              "RelativeDocumentMoniker": "DAL (Data Access Layer)\\SanPham_DAL.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\SanPham_DAL.cs",
-              "RelativeToolTip": "DAL (Data Access Layer)\\SanPham_DAL.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowCUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T14:27:29.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChiTietHoaDon_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\Project DTO (Data Transfer Object)\\ChiTietHoaDon_DTO.cs",
-              "RelativeDocumentMoniker": "Project DTO (Data Transfer Object)\\ChiTietHoaDon_DTO.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\Project DTO (Data Transfer Object)\\ChiTietHoaDon_DTO.cs",
-              "RelativeToolTip": "Project DTO (Data Transfer Object)\\ChiTietHoaDon_DTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T15:11:10.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "HoaDon_DAL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\HoaDon_DAL.cs",
               "RelativeDocumentMoniker": "DAL (Data Access Layer)\\HoaDon_DAL.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\HoaDon_DAL.cs",
               "RelativeToolTip": "DAL (Data Access Layer)\\HoaDon_DAL.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwA8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T15:10:54.79Z",
+              "WhenOpened": "2025-07-28T02:06:33.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HoaDon_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\Project DTO (Data Transfer Object)\\HoaDon_DTO.cs",
-              "RelativeDocumentMoniker": "Project DTO (Data Transfer Object)\\HoaDon_DTO.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\Project DTO (Data Transfer Object)\\HoaDon_DTO.cs",
-              "RelativeToolTip": "Project DTO (Data Transfer Object)\\HoaDon_DTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Title": "frmXemHoaDon.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.Designer.cs",
+              "RelativeDocumentMoniker": "GUI\\frmXemHoaDon.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.Designer.cs",
+              "RelativeToolTip": "GUI\\frmXemHoaDon.Designer.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAcwLoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T15:10:43.773Z",
+              "WhenOpened": "2025-07-28T02:01:40.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmTaoHoaDon.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs",
-              "RelativeDocumentMoniker": "GUI\\frmTaoHoaDon.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs",
-              "RelativeToolTip": "GUI\\frmTaoHoaDon.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAawGgAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmXemHoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\frmXemHoaDon.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.cs",
+              "RelativeToolTip": "GUI\\frmXemHoaDon.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T15:04:31.02Z",
+              "WhenOpened": "2025-07-28T02:01:38.276Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmSanPham.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
-              "RelativeDocumentMoniker": "GUI\\frmSanPham.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
-              "RelativeToolTip": "GUI\\frmSanPham.cs",
-              "ViewState": "AgIAAAkBAAAAAAAAAAAEwBkBAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T13:30:38.162Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
