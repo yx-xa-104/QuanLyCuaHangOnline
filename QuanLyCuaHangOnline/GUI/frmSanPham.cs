@@ -74,15 +74,22 @@ namespace GUI
                 txtSoLuongTon.Text = row.Cells["SoLuongTon"].Value.ToString();
                 txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
 
-                // Lấy tên file ảnh từ CSDL
-                string imageName = row.Cells["HinhAnh"].Value?.ToString() ?? "";
-                if (!string.IsNullOrEmpty(imageName))
+                // Kiểm tra xem cột HinhAnh có tồn tại hay không trước khi lấy giá trị
+                if (dgvSanPham.Columns.Contains("HinhAnh"))
                 {
-                    // Ảnh được lưu trong thư mục Images của ứng dụng
-                    string imagePath = Path.Combine(Application.StartupPath, "Images", imageName);
-                    if (File.Exists(imagePath))
+                    string imageName = row.Cells["HinhAnh"].Value?.ToString() ?? "";
+                    if (!string.IsNullOrEmpty(imageName))
                     {
-                        picHinhAnh.ImageLocation = imagePath;
+                        // Ảnh được lưu trong thư mục Images của ứng dụng
+                        string imagePath = Path.Combine(Application.StartupPath, "Images", imageName);
+                        if (File.Exists(imagePath))
+                        {
+                            picHinhAnh.ImageLocation = imagePath;
+                        }
+                        else
+                        {
+                            picHinhAnh.Image = null;
+                        }
                     }
                     else
                     {
@@ -171,7 +178,9 @@ namespace GUI
                 }
                 else if (dgvSanPham.SelectedRows.Count > 0 && !isAdding)
                 {
-                    imageName = dgvSanPham.SelectedRows[0].Cells["HinhAnh"].Value?.ToString() ?? "";
+                    // Kiểm tra xem cột HinhAnh có tồn tại hay không trước khi lấy giá trị
+                    if(dgvSanPham.Columns.Contains("HinhAnh"))
+                        imageName = dgvSanPham.SelectedRows[0].Cells["HinhAnh"].Value?.ToString() ?? "";
                 }
 
                 // Tạo đối tượng DTO và chuyển đổi kiểu dữ liệu

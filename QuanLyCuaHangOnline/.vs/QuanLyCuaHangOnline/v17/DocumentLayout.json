@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\dal (data access layer)\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{804FBA4C-7AB8-4F6C-81A3-333B16345457}|DAL (Data Access Layer)\\DAL (Data Access Layer).csproj|solutionrelative:dal (data access layer)\\hoadon_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmxemhoadon.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmxemhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmtaohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|c:\\users\\user\\documents\\github\\quanlycuahangonline\\quanlycuahangonline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B584ABF9-5987-405C-97D7-882B4ACB656F}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -46,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmChinh.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmChinh.cs",
               "RelativeDocumentMoniker": "GUI\\frmChinh.cs",
@@ -54,12 +58,11 @@
               "RelativeToolTip": "GUI\\frmChinh.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T02:20:25.631Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "frmSanPham.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
               "RelativeDocumentMoniker": "GUI\\frmSanPham.cs",
@@ -72,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "frmKhachHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmKhachHang.cs",
               "RelativeDocumentMoniker": "GUI\\frmKhachHang.cs",
@@ -80,12 +83,11 @@
               "RelativeToolTip": "GUI\\frmKhachHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T02:09:24.945Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmTaoHoaDon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmTaoHoaDon.cs",
               "RelativeDocumentMoniker": "GUI\\frmTaoHoaDon.cs",
@@ -93,12 +95,11 @@
               "RelativeToolTip": "GUI\\frmTaoHoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T02:53:28.038Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "frmXemHoaDon.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.cs",
               "RelativeDocumentMoniker": "GUI\\frmXemHoaDon.cs",
@@ -106,8 +107,7 @@
               "RelativeToolTip": "GUI\\frmXemHoaDon.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-28T02:01:32.246Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -116,6 +116,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmSanPham.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
+              "RelativeDocumentMoniker": "GUI\\frmSanPham.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmSanPham.cs",
+              "RelativeToolTip": "GUI\\frmSanPham.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAUwLkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T02:53:12.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HoaDon_DAL.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\DAL (Data Access Layer)\\HoaDon_DAL.cs",
               "RelativeDocumentMoniker": "DAL (Data Access Layer)\\HoaDon_DAL.cs",
@@ -128,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "frmXemHoaDon.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.Designer.cs",
               "RelativeDocumentMoniker": "GUI\\frmXemHoaDon.Designer.cs",
@@ -136,12 +149,11 @@
               "RelativeToolTip": "GUI\\frmXemHoaDon.Designer.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAAcwLoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T02:01:40.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T02:01:40.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmXemHoaDon.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\QuanLyCuaHangOnline\\QuanLyCuaHangOnline\\GUI\\frmXemHoaDon.cs",
               "RelativeDocumentMoniker": "GUI\\frmXemHoaDon.cs",
@@ -149,8 +161,7 @@
               "RelativeToolTip": "GUI\\frmXemHoaDon.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T02:01:38.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T02:01:38.276Z"
             }
           ]
         }
